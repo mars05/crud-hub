@@ -3,6 +3,7 @@ import type { DefaultThemeOptions } from 'vuepress'
 import { path } from '@vuepress/utils'
 import { navbar, sidebar } from './configs'
 export default defineUserConfig<DefaultThemeOptions>({
+  base: '/docs/',
   // 站点配置
   port: 8001,
   locales: {

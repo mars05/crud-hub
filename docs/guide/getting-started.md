@@ -1,115 +1,56 @@
 # 快速上手
-
+官网地址：[Crud Hub](https://crud-hub.top/)
 ## 注册登录
+ 
+进入 [注册](https://crud-hub.top/#/signup) 界面完成用户注册、登录操作。
 
-- [Node.js v12+](https://nodejs.org/)
-- [Yarn v1 classic](https://classic.yarnpkg.com/zh-Hans/) （可选）
-
-::: tip
-- 使用 [pnpm](https://pnpm.io/zh/) 时，你需要在 [`.npmrc`](https://pnpm.io/zh/npmrc#shamefully-hoist) 文件中设置 `shamefully-hoist=true` 。
-- 使用 [yarn 2](https://yarnpkg.com/) 时，你需要在 [`.yarnrc.yml`](https://yarnpkg.com/configuration/yarnrc#nodeLinker) 文件中设置 `nodeLinker: 'node-modules'` 。
-:::
-
-## 手动安装
-
-这一章节会帮助你从头搭建一个简单的 VuePress 文档网站。如果你想在一个现有项目中使用 VuePress 管理文档，从步骤 3 开始。
-
-- **步骤1**: 创建并进入一个新目录
-
-```bash
-mkdir vuepress-starter
-cd vuepress-starter
-```
-
-- **步骤2**: 初始化项目
-
-<CodeGroup>
-  <CodeGroupItem title="YARN" active>
-
-```bash
-git init
-yarn init
-```
-
-  </CodeGroupItem>
-
-  <CodeGroupItem title="NPM">
-
-```bash
-git init
-npm init
-```
-
-  </CodeGroupItem>
-</CodeGroup>
+![注册图](./zc.jpg)
 
 
-- **步骤3**: 将 VuePress 安装为本地依赖
+## 模板使用
 
-<CodeGroup>
-  <CodeGroupItem title="YARN" active>
+进入 **模板市场**、**我的模板** 点击项目生成或代码生成。
 
-```bash
-yarn add -D vuepress@next
-```
+### 项目生成
 
-  </CodeGroupItem>
+- **步骤1**: 输入项目参数，包括项目名称、basePakcage。
 
-  <CodeGroupItem title="NPM">
+![](./xmcs.jpg)
 
-```bash
-npm install -D vuepress@next
-```
+- **步骤2**: 如果模板项目是Maven项目，请完善Maven相关参数。
 
-  </CodeGroupItem>
-</CodeGroup>
+![](./mvcs.jpg)
 
-- **步骤4**: 在 `package.json` 中添加一些 [scripts](https://classic.yarnpkg.com/zh-Hans/docs/package-json#toc-scripts)
+- **步骤3**: 确认要生成的数据表结构，目前官网只支持DDL的形式。IDEA插件则可以从数据库连接选择表。
 
-```json
-{
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  }
-}
-```
+![](./sjcs.jpg)
 
-- **步骤5**: 将默认的临时目录和缓存目录添加到 `.gitignore` 文件中
+- **步骤4**: 点击预览，也可以直接点击生成进行项目zip包下载。
 
-```bash
-echo 'node_modules' >> .gitignore
-echo '.temp' >> .gitignore
-echo '.cache' >> .gitignore
-```
+![](./xmyl.jpg)
 
-- **步骤6**: 创建你的第一篇文档
+### 代码生成
 
-```bash
-mkdir docs
-echo '# Hello VuePress' > docs/README.md
-```
+- **步骤1**: 输入代码生成的参数，包括basePakcage和需要生成的代码模板。
 
-- **步骤7**: 在本地启动服务器来开发你的文档网站
+![](./dmcs.jpg)
+ 
+- **步骤2**: 确认要生成的数据表结构，目前官网只支持DDL的形式。IDEA插件则可以从数据库连接选择表。
 
-<CodeGroup>
-  <CodeGroupItem title="YARN" active>
+![](./dmsj.jpg)
+ 
+- **步骤3**: 点击预览，也可以直接点击生成进行代码zip包下载。
 
-```bash
-yarn docs:dev
-```
+![](./dmyl.jpg)
 
-  </CodeGroupItem>
+## 模板制作
 
-  <CodeGroupItem title="NPM">
+如果现有的模板不能满足大佬们需求，发现不能愉快的摸鱼，那么可以自己创作模板项目，自己创建的和模板市场是一样的功能。独乐乐不如众乐乐，如果大佬们觉得自己的模板很标准、能够愉快的摸鱼，就把它开放出来，让大家膜拜使用！（**注意:** 公司内部信息、数据库账户密码等敏感信息请谨慎处理）。
 
-```bash
-npm run docs:dev
-```
+制作教程请访问 [模板制作](./) 章节。
 
-  </CodeGroupItem>
-</CodeGroup>
+## 插件使用
 
-  VuePress 会在 [http://localhost:8080](http://localhost:8080) 启动一个热重载的开发服务器。当你修改你的 Markdown 文件时，浏览器中的内容也会自动更新。
+虽然官网能进行代码生成，但终归还是要复制来复制去等繁琐操作，不太符合我们摸鱼人的气质，因此，使用插件将更合适。
 
-现在，你应该已经有了一个简单可用的 VuePress 文档网站。接下来，了解一下 VuePress [配置](./configuration.md) 相关的内容。
+插件使用请访问 [插件](./) 章节。
