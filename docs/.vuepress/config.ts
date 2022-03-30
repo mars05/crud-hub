@@ -1,17 +1,14 @@
 import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
+import { path } from '@vuepress/utils'
 import { navbar, sidebar } from './configs'
-
 export default defineUserConfig<DefaultThemeOptions>({
   // 站点配置
-  title: 'Hello VuePress',
-  description: 'Just playing around',
-
-
+  port: 8001,
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: 'Crud Hub',
+      title: 'Crud Hub 在线文档',
       description: 'CRUD 代码生成平台',
     },
   },
@@ -23,7 +20,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   themeConfig: {
     logo: '/images/hero.png',
 
-    repo: 'vuepress/vuepress-next',
+    repo: 'mars05/crud-hub',
 
     docsDir: 'docs',
 
@@ -69,4 +66,19 @@ export default defineUserConfig<DefaultThemeOptions>({
     },
 
   },
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: '',
+          },
+          '/zh/': {
+            placeholder: '搜索',
+          },
+        },
+      },
+    ],
+  ]
 })
