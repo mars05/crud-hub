@@ -9,13 +9,8 @@ export const zh: NavbarConfig = [
   {
     text: "模板制作",
     children: [
-      {
-        text: "项目模板",
-        children: []
-      }, {
-        text: "代码模板",
-        children: []
-      }
+      '/template/project.md',
+      '/template/file.md',
     ]
   },
   {
