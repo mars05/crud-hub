@@ -53,4 +53,6 @@ jobs:
           branch: test
           # 部署目录为 VuePress 的默认输出目录
           target-folder: docs
-          #token: ${{ secrets.TOKEN2 }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - name: cccc
+        run: echo ${{ secrets.GITHUB_TOKEN }}
