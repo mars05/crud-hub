@@ -17,6 +17,10 @@ jobs:
           # “最近更新时间” 等 git 日志相关信息，需要拉取全部提交记录
           fetch-depth: 0
 
+      - name: cccc
+        run: echo ${{ secrets.PUSH_TOKEN }}
+      - name: dddd
+        run: echo ${{ secrets.PUSH_TOKEN2 }}        
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -48,11 +52,10 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           folder: docs/.vuepress/dist        
-          repository-name: mars05/crud-hub
+          repository-name: mars05/mars05.github.io
           # 部署到 gh-pages 分支
           branch: test
           # 部署目录为 VuePress 的默认输出目录
           target-folder: docs
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - name: cccc
-        run: echo ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PUSH_TOKEN }}
+
