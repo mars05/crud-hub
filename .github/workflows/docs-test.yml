@@ -19,9 +19,9 @@ jobs:
           persist-credentials: false
 
       - name: cccc
-        run: echo ${{ secrets.PUSH_TOKEN }}
+        run: echo ${{ secrets.GITHUB_PUSH_TOKEN }}
       - name: dddd
-        run: echo ${{ secrets.PUSH_TOKEN2 }}        
+        run: echo ${{ secrets.GITHUB_PUSH_TOKEN2 }}        
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -58,5 +58,5 @@ jobs:
           branch: test
           # 部署目录为 VuePress 的默认输出目录
           target-folder: docs
-          token: ${{ secrets.PUSH_TOKEN }}
+          token: ${{ secrets.GITHUB_PUSH_TOKEN }}
 
