@@ -1,4 +1,4 @@
-name: docs-test
+name: build
 
 on:
   # 每当 push 到 main 分支时触发部署
@@ -18,10 +18,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: cccc
-        run: echo ${{ secrets.PUSH_TOKEN }}
-      - name: dddd
-        run: echo ${{ secrets.PUSH_TOKEN2 }}        
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
@@ -55,8 +51,8 @@ jobs:
           folder: docs/.vuepress/dist        
           repository-name: mars05/mars05.github.io
           # 部署到 gh-pages 分支
-          branch: test
+          branch: main
           # 部署目录为 VuePress 的默认输出目录
           target-folder: docs
+          # @see https://docs.github.com/cn/actions/reference/authentication-in-a-workflow#about-the-github_token-secret
           token: ${{ secrets.PUSH_TOKEN }}
-
