@@ -1,4 +1,6 @@
-![](./docs/.vuepress/public/images/hero.png)
+<div align="center"> 
+<img src="./docs/.vuepress/public/images/hero.png")>
+</div>
 
 # crud-hub
  
