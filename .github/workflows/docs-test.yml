@@ -1,4 +1,4 @@
-name: docs
+name: docs-test
 
 on:
   # 每当 push 到 main 分支时触发部署
@@ -48,7 +48,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           folder: docs/.vuepress/dist        
-          repository-name: mars05.github.io
+          repository-name: mars05/mars05.github.io
           # 部署到 gh-pages 分支
           branch: main
           # 部署目录为 VuePress 的默认输出目录
