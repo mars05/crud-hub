@@ -48,9 +48,9 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
           folder: docs/.vuepress/dist        
-          repository-name: mars05/mars05.github.io
+          repository-name: mars05/crud-hub
           # 部署到 gh-pages 分支
-          branch: main
+          branch: test
           # 部署目录为 VuePress 的默认输出目录
           target-folder: docs
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.TOKEN2 }}
