@@ -8,7 +8,14 @@
   
 [Crud Hub](https://crud-hub.top/) 是一个**代码生成平台**。可以用来在线管理你的模板代码，并结合IDEA等插件帮助大佬们快速生成增删改查代码。
 
-更多信息请访问: [在线文档](https://crud-hub.top/docs/)
+**相关链接:**
+
+- 官网: [Crud Hub](https://crud-hub.top/)
+
+- 在线文档: [Crud Hub Docs](https://crud-hub.top/docs/)
+
+- 插件: [Crud Intellij Plugin](https://github.com/mars05/crud-intellij-plugin)
+
 
 ## 架构设计
 
