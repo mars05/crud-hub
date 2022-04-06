@@ -17,9 +17,36 @@
 - 模板导入: 按需从模板市场或使用访问令牌导入模板
 
 ## 插件安装
+- **插件市场:**  <kbd>File</kbd> > <kbd>Settings</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "crud"</kbd> > <kbd>Install Plugin</kbd>  
+  
+![](./install.jpg)
+
+- **本地安装**
+
+下载插件文件: [crud-plugin](https://github.com/mars05/crud-intellij-plugin/releases/download/v2.0.1/crud-plugin-2.0.1.zip)
+
 
 ## 模板导入
 
+- **步骤1:** 打开Crud设置界面
+
+<kbd>File</kbd> > <kbd>Settings</kbd> > <kbd>Tools</kbd> > <kbd>Crud</kbd> > <kbd>模板导入</kbd> 
+  
+![](./mbdr.jpg)
+
+- **步骤2:** 市场搜索结果中点导入按钮或点击令牌导入，市场搜索的是开放的模板。对于不开放的模板，可以在 **Crud Hub** > [我的模板](https://crud-hub.top/#/mytemplate/template) 设置访问令牌，然后通过访问令牌导入到插件中
+
+![](./lpdr.jpg)
+
+- **步骤3:** 我的模板中可以管理已导入的模板。插件导入后的模板是离线模板，不会随 **Crud Hub** 中的模板修改可自动更新，在插件的**我的模板**中，可以点击刷新模板来和**Crud Hub**中的模板进行同步更新
+
+![](./wdmb.jpg)
+
 ## 项目生成
 
+打开创建项目的界面:  <kbd>New</kbd> > <kbd>Project</kbd> / <kbd>Module</kbd> > <kbd>Crud</kbd> > <kbd>模板项目选择</kbd>
+
+
 ## 代码生成
+
+选中已有项目，鼠标右键: <kbd>Crud</kbd> > <kbd>代码生成</kbd> > <kbd>模板项目选择</kbd>

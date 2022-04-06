@@ -28,6 +28,10 @@
 | table.remarks | All | 代码 | 表备注 |
 | table.columns | All | 代码 | 表字段集合 |
 
+::: tip
+ dataSource.xxx变量只有在插件使用中，并且通过数据库表生成时才有效。
+:::
+
 ## 表字段属性: 
 
 columnName: 列名
