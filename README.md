@@ -4,7 +4,8 @@
 
 # crud-hub
  
- [![Build Status](https://img.shields.io/github/workflow/status/mars05/crud-hub/build?logo=github)](https://github.com/mars05/crud-hub/actions/workflows/build.yml) [![Plugin Downloads](https://img.shields.io/jetbrains/plugin/d/12440-crud?logo=jetbrains)](https://plugins.jetbrains.com/plugin/12440)
+ [![Build Status](https://img.shields.io/github/workflow/status/mars05/crud-hub/build?logo=github)](https://github.com/mars05/crud-hub/actions/workflows/build.yml)
+ [![Plugin Downloads](https://img.shields.io/jetbrains/plugin/d/12440-crud?logo=jetbrains)](https://plugins.jetbrains.com/plugin/12440)
   
 [Crud Hub](https://crud-hub.top/) 是一个**代码生成平台**。可以用来在线管理你的模板代码，并结合IDEA等插件帮助大佬们快速生成增删改查代码。
 
