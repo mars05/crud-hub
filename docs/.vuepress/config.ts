@@ -1,8 +1,8 @@
 import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
-import { path } from '@vuepress/utils'
+const { searchPlugin } = require('@vuepress/plugin-search')
+const { defaultTheme } = require('vuepress')
 import { navbar, sidebar } from './configs'
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
   base: '/docs/',
   // 站点配置
   port: 8001,
@@ -14,11 +14,7 @@ export default defineUserConfig<DefaultThemeOptions>({
     },
   },
   // 主题和它的配置
-  theme: '@vuepress/theme-default',
-  // themeConfig: {
-  //   logo: 'https://vuejs.org/images/logo.png',
-  // },
-  themeConfig: {
+  theme: defaultTheme({
     logo: '/images/hero.png',
 
     repo: 'mars05/crud-hub',
@@ -65,21 +61,17 @@ export default defineUserConfig<DefaultThemeOptions>({
         toggleSidebar: '切换侧边栏',
       },
     },
-
-  },
+  }),
   plugins: [
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: '',
-          },
-          '/zh/': {
-            placeholder: '搜索',
-          },
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: '',
+        },
+        '/zh/': {
+          placeholder: '搜索',
         },
       },
-    ],
+    }),
   ]
 })
