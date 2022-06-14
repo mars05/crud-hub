@@ -44,26 +44,27 @@ remarks: 列备注
 
 type: 列类型（Integer），参考: java.sql.Types
 
-javaTypeClass: 列类型对应java类型的class
+typeSimpleName: 列类型对应java类型的class简单名称
 
 primaryKey: 是否主键（Boolean）
 
 ## 列类型对应的Java类型: 
 
-| JDBCType | Java类型 |
+| type(java.sql.Types) | typeSimpleName(Java类型) |
 | -------- | ------- |
-| VARCHAR | String        |
-| LONGVARCHAR | String        |
-| CHAR | String        |
-| INTEGER | Integer        |
-| BIGINT | Long        |
-| SMALLINT | Integer        |
-| TINYINT | Integer        |
-| FLOAT | Float        |
-| DOUBLE | Double        |
-| DECIMAL | BigDecimal        |
-| BOOLEAN | Boolean        |
-| DATE | Date        |
-| TIME | Date        |
-| TIMESTAMP | Date        |
-| BIT | boolean        |
+| VARCHAR(12) | String        |
+| LONGVARCHAR(-1) | String        |
+| CHAR(1) | String        |
+| NUMERIC(2) | Integer        |
+| INTEGER(4) | Integer        |
+| BIGINT(-5) | Long        |
+| SMALLINT(5) | Integer        |
+| TINYINT(-6) | Integer        |
+| FLOAT(6) | Float        |
+| DOUBLE(8) | Double        |
+| DECIMAL(3) | BigDecimal        |
+| BOOLEAN(16) | Boolean        |
+| DATE(91) | Date        |
+| TIME(92) | Date        |
+| TIMESTAMP(93) | Date        |
+| BIT(-7) | boolean        |
