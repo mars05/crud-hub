@@ -15,6 +15,6 @@ features:
   - title: 模板管理
     details: 以项目维度在线维护代码模板，大佬们可以根据喜好制作不同的项目模板。    
   - title: 插件
-    details: 提供IntelliJ IDEA插件，方便大佬们愉快的摸鱼🐟。
+    details: 提供IntelliJ IDEA插件、Visual Studio Code扩展，方便大佬们愉快的摸鱼🐟。
 footer: MIT Licensed | Copyright © 2022-present Mars05
 ---

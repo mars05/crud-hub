@@ -15,5 +15,8 @@ export const zh: SidebarConfig = {
     '/template/file.md',
     '/template/var.md',
   ],
-  '/plugin/': ['/plugin/idea.md']
+  '/plugin/': [
+    '/plugin/idea.md',
+    '/plugin/vscode.md',
+  ]
 }

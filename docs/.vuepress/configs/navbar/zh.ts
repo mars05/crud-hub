@@ -17,6 +17,7 @@ export const zh: NavbarConfig = [
     text: '插件',
     children: [
       '/plugin/idea.md',
+      '/plugin/vscode.md',
     ],
   },
 ]
