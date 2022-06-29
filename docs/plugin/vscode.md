@@ -1,6 +1,6 @@
 # crud-vscode-plugin
 
-![](./docs/crud-vscode-plugin.png)
+![](./vscode/crud-vscode-plugin.png)
 
 一个用于**代码生成**的Vscode插件，可以根据数据库表结构，帮助您从不同的模板快速生成相关代码。支持项目生成和代码生成、自定义模板等功能。
 
